@@ -15,9 +15,10 @@ body {
 header {
     background-color: white;
     width: 100%;
-    height: 8%;
+    min-height: 8%;
     position: fixed;
     z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 
 #home {
@@ -25,13 +26,17 @@ header {
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 100%;
 }
 
 .vertical-align {
     position: relative;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
+}
+
+img#logo-home {
+    border-radius: 41px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
 }
 
 div {
