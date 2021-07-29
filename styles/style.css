@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Berkshire-Swash";
+    src: url(../fonts/BerkshireSwash-Regular.ttf);
+}
+
 html, body, main {
     height: 100%;
 }
@@ -16,7 +21,6 @@ header {
     background-color: white;
     width: 100%;
     min-height: 60px;
-    z-index: 1;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 
@@ -25,7 +29,6 @@ header {
     max-width: 100%;
     height: calc(100% - 60px);
     text-align: center;
-    padding: 5%;
 }
 
 .vertical-align {
@@ -40,11 +43,55 @@ img#logo-home {
     max-width: 100%;
 }
 
-div#text-page {
-    height: 3000px;
+div#page {
     background-image: url("../img/fundo_text-page.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
+}
+
+div#text-page {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h2.berkshire {
+    font-family: Berkshire-Swash;
+    color: #BE5C00;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+#sobre-mim {
+    max-width: 440px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+
+li::before {content: "• "; color:black}
+
+#minha-foto {
+    max-width: 440px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.contato {
+    font-size: 30px;
+}
+
+#telefone, #whatsapp {
+    display: inline-block;
+    vertical-align: middle;
 }
