@@ -7,40 +7,51 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    
     <title>Lucas Veríssimo</title>
 </head>
 <body>
     <header>
+        <div class="caixa">
+            <img src="img/logo-pq.png" alt="logo" id="logo-header">
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">PROJETOS</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <picture id="home">
-            <img src="img/logo_home.png" alt="logo" class="vertical-align" id="logo-home">
-        </picture>
+        <section id="home">
+            <img src="img/logo.png" alt="logo" class="vertical-align" id="logo">
+        </section>
         <div id="page">
             <div id="text-page">
                 <h2 class="berkshire">Bem-vindo</h2>
                 <section id="sobre-mim">
-                    <p>
-                        Sou Desenvolvedor Web apaixonado com programação e esperiência do usuário. Tenho conhecimento avançado em JavaScript, HTML e CSS que faz o site mais responsivo e profissional. Trabalho também com ferramentas de ponta como Photoshop, Adobe Premiere, Canva, Illustrator e Adobe XD deixando a criação do seu site e logo mais bonita e criativa. Tenho vários clientes fidelizados pela qualidade e agilidade na entrega do projeto.
-                    </p>
-                    <p>
-                        Serviços:
-                    </p>
-                    <ul>
-                        <li>Site de alta performance</li>
-                        <li>Logo moderna e criativa</li>
-                        <li>Edição de fotos</li>
-                        <li>Edição de vídeos</li>
-                    </ul>
-                    <p>Entre em contato e faça um orçamento.</p>
+                    <img src="img/terno.png" alt="terno" id="img-sobre-mim">
+                    <section id="txt-sobre-mim">
+                        <p>
+                            Sou Desenvolvedor Web apaixonado com programação e esperiência do usuário. Tenho conhecimento avançado em JavaScript, HTML e CSS que faz o site mais responsivo e profissional. Trabalho também com ferramentas de ponta como Photoshop, Adobe Premiere, Canva, Illustrator e Adobe XD deixando a criação do seu site e logo mais bonita e criativa. Tenho vários clientes fidelizados pela qualidade e agilidade na entrega do projeto.
+                        </p>
+                        <p><br>
+                            Serviços:
+                        </p>
+                        <ul>
+                            <li>Site de alta performance</li>
+                            <li>Logo moderna e criativa</li>
+                            <li>Edição de fotos</li>
+                            <li>Edição de vídeos</li>
+                        </ul>
+                    </section>
                 </section>
-                <img src="img/terno.png" alt="terno" id="minha-foto">
+                
+                <p>Entre em contato e faça um orçamento.</p>
+
                 <h2 class="berkshire">Contato:</h2>
-                <section id="whatsapp" onclick="clicou()">
-                    <h2 id="telefone" class="contato">Tel: (31) 9 8478-4190</h2>
+                
+                <a href="https://api.whatsapp.com/send?phone=5531984784190" target="_blank" id="whatsapp">
+                    <h2 id="telefone">Tel: (31) 9 8478-4190</h2>
                     <img src="img/whatsapp.png" alt="Simbolo do Whatsapp" id="img_whatsapp">
-                </section>
+                </a>
             </div>
         </div>
     </main>

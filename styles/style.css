@@ -5,7 +5,6 @@
     src: url(../fonts/BerkshireSwash-Regular.ttf);
 }
 
-
 body {
     background-image: url("../img/background.jpg");
     background-attachment: fixed;
@@ -17,14 +16,47 @@ body {
 header {
     background-color: white;
     width: 100%;
-    min-height: 60px;
+    height: 60px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    padding: 0 10px;
 }
 
-#home {
+div.caixa {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+img#logo-header {
+    display: inline;
+    margin-top: 5px;
+}
+
+nav {
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+section#home {
     display: block;
-    max-width: 100%;
     text-align: center;
+    max-width: 100%;
 }
 
 .vertical-align {
@@ -33,10 +65,10 @@ header {
     transform: translateY(-50%);
 }
 
-img#logo-home {
+img#logo {
     border-radius: 41px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
-    max-width: 100%;
+    max-width: 90%;
 }
 
 div#page {
@@ -61,42 +93,53 @@ h2.berkshire {
     margin-bottom: 30px;
 }
 
-#sobre-mim {
-    max-width: 440px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 20px;
+section#sobre-mim {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+img#img-sobre-mim {
+    float: left;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
+    margin: 20px;
+    transition: 0.5s;
+}
+
+img#img-sobre-mim:hover {
+    opacity: 0.8;
+}
+
+section#txt-sobre-mim {
+    margin: 20px;
 }
 
 p, ul {
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    text-align: justify;
+    text-align: left;
 }
 
-li::before {content: "• "; color:black}
-
-#minha-foto {
-    display: inline-block;
-    margin-left: 16px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.500);
+li::before {
+    content: "• ";
+    color:black
 }
 
-
-.contato {
+h2#telefone {
     font-size: 30px;
 }
 
-#whatsapp {
+a#whatsapp {
     padding: 10px;
     display: inline-block;
     margin: auto;
     border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
 }
 
-#whatsapp:hover {
+a#whatsapp:hover {
     background-color: lightgreen;
     cursor: pointer;
 }
