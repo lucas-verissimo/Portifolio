@@ -2,7 +2,6 @@
     --header-height: 60px;
 }
 
-
 @font-face {
     font-family: "Berkshire-Swash";
     src: url(../fonts/BerkshireSwash-Regular.ttf);
@@ -24,14 +23,13 @@ header {
 }
 
 div.caixa {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
     padding: 0 10px;
 }
 
 img#logo-header {
-    display: inline;
     margin-top: calc((var(--header-height) - 50px)/2);
 }
 
@@ -41,9 +39,9 @@ nav {
     right: 0;
 }
 
-a {
+header nav a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     padding: 10px;
@@ -51,9 +49,14 @@ a {
     transition: 0.5s;
 }
 
-a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+header nav a:hover {
+    background-color: rgba(0, 0, 255, 0.5);
     color: black;
+    box-shadow: 2px 2px 0px rgb(0, 0, 200);
+}
+
+header nav a:active {
+    box-shadow:2px 2px 0px rgb(0, 0, 200) inset;
 }
 
 section#home {
@@ -113,14 +116,14 @@ img#img-sobre-mim:hover {
     opacity: 0.8;
 }
 
-section#txt-sobre-mim {
-    text-align: justify;
-}
-
 p, ul {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: left;
+}
+
+section#contato {
+    clear: both;
 }
 
 li::before {
