@@ -1,0 +1,27 @@
+@media screen and (max-width: 850px) {
+    #img-sobre-mim {
+        float: none !important;
+    }
+
+    #txt-sobre-mim p {
+        clear: both;
+        text-align: justify !important;
+    }
+}
+
+@media screen and (max-width: 420px){
+    header {
+        background: linear-gradient(180deg, #696c79, #0e1538 50%) !important;
+        position: unset !important;
+    }
+
+    .caixa {
+        display: block !important;
+        text-align: center;
+    }
+
+    header nav {
+        position: static !important;
+        padding: 10px 0;
+    }
+}

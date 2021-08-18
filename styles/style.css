@@ -17,9 +17,8 @@ body {
 
 header {
     background: linear-gradient(45deg, #b1b3b9, #696c79, #0e1538 50%);
-    
     width: 100%;
-    height: var(--header-height);
+    min-height: var(--header-height);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 10;
@@ -33,13 +32,14 @@ div.caixa {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 img#logo-header {
     margin-top: calc((var(--header-height) - 50px)/2);
 }
 
-nav {
+header nav {
     position: absolute;
     top: 19px;
     right: 0;

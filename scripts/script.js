@@ -1,10 +1,8 @@
-var height_screen = (window.innerHeight).toString();
-height_screen += "px";
-var home123 = document.querySelector("#home");
-home123.style.height = height_screen
+var height_screen = (window.innerHeight);
+var home = document.querySelector("#home");
 
-var width_screen = window.innerWidth
-if (width_screen < 750) {
-    document.querySelector('#img-sobre-mim').style.width = '100%';
-    document.querySelector('#img-sobre-mim').style.margin = '20px auto';
+if (window.innerWidth > 420) {
+    home.style.height = height_screen + 'px'
+}else {
+    home.style.height = (height_screen - 80) + 'px'
 }
