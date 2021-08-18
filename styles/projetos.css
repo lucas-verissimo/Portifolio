@@ -4,6 +4,12 @@ main {
     padding: 20px;
 }
 
+.container {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: black;

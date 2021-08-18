@@ -1,5 +1,5 @@
 :root {
-    --header-height: 60px;
+    --header-height: 80px;
 }
 
 @font-face {
@@ -16,17 +16,23 @@ body {
 }
 
 header {
-    background-color: white;
+    background: linear-gradient(45deg, #b1b3b9, #696c79, #0e1538 50%);
+    
     width: 100%;
     height: var(--header-height);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 10;
 }
 
 div.caixa {
     max-width: 1000px;
     margin: 0 auto;
-    position: relative;
     padding: 0 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img#logo-header {
@@ -35,7 +41,7 @@ img#logo-header {
 
 nav {
     position: absolute;
-    top: 22px;
+    top: 19px;
     right: 0;
 }
 
