@@ -5,23 +5,28 @@
 
     #txt-sobre-mim p {
         clear: both;
-        text-align: justify !important;
+        text-align: justify;
     }
 }
 
 @media screen and (max-width: 420px){
     header {
-        background: linear-gradient(180deg, #696c79, #0e1538 50%) !important;
-        position: unset !important;
+        position: unset;
+        padding: 10px 0;
     }
 
     .caixa {
-        display: block !important;
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        padding: 0 30px !important;
     }
 
     header nav {
-        position: static !important;
-        padding: 10px 0;
+        position: static;
+    }
+
+    header nav a:nth-child(1) {
+        margin-bottom: 5px;
     }
 }

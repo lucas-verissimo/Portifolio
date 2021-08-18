@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-/*
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #0e1538;
-
-}
-*/
-
 .caixa a {
     box-sizing: border-box;
     font-family: 'Poppins';

@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/responsivo.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Lucas Veríssimo</title>
 </head>
 <body>
     <header>
         <div class="caixa">
-            <img src="img/logo-pq.png" alt="logo" id="logo-header">
+            <picture>
+                <source media="(max-width: 420px)" srcset="img/logo-pq-85px.png">
+                <img src="img/logo-pq-50px.png" alt="logo" id="logo-header">
+            </picture>
+
             <nav>
                 <a href="#">
                     <span>HOME</span>
