@@ -46,3 +46,8 @@ figcaption.descricao-projeto {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.projeto-atual {
+    background-color: #9fc7cc;
+    border: 3px solid #0e1538;
+}

@@ -121,24 +121,21 @@ h2#telefone {
     font-size: 30px;
 }
 
-a#whatsapp {
+.contact-link {
     padding: 10px;
     display: inline-block;
-    margin: auto;
+    margin: 10px;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+    background-color: #0e1538;
     transition: 0.5s;
 }
 
-a#whatsapp:hover {
-    background-color: lightgreen;
+.contact-link:hover,
+.contact-link:focus-visible {
+    background-color: #BE5C00;
     cursor: pointer;
-}
-
-#telefone, #img_whatsapp {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 footer {

@@ -30,3 +30,141 @@
         margin-bottom: 5px;
     }
 }
+
+/* Atualização de apresentação profissional — 2026 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #eef2f5;
+    color: #172033;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    min-height: var(--header-height);
+    background: #0e1538;
+}
+
+section#home {
+    height: clamp(260px, 48vh, 520px) !important;
+    padding: 48px 20px 28px;
+    background: linear-gradient(135deg, #111a46, #29366c);
+}
+
+img#logo {
+    width: min(310px, 75vw);
+    max-height: 80%;
+    object-fit: contain;
+}
+
+div#page {
+    background: #ffffff;
+    padding: 56px 24px;
+}
+
+div#text-page {
+    max-width: 960px;
+}
+
+h2.berkshire {
+    color: #8a4300;
+    font-size: clamp(2.4rem, 7vw, 4.6rem);
+    line-height: 1.05;
+}
+
+section#sobre-mim {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: 36px;
+    align-items: start;
+    margin: 44px 0;
+}
+
+img#img-sobre-mim {
+    width: 100%;
+    max-width: 320px;
+    float: none;
+    margin: 0;
+}
+
+#txt-sobre-mim p,
+#txt-sobre-mim ul,
+#contato p {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    text-align: left;
+}
+
+#txt-sobre-mim ul {
+    margin-top: 10px;
+}
+
+#contato {
+    padding-top: 12px;
+}
+
+#contato p {
+    text-align: center;
+}
+
+.contact-link {
+    min-width: 120px;
+    font: 600 1rem Arial, Helvetica, sans-serif;
+}
+
+footer {
+    height: 100px;
+}
+
+.container {
+    position: static;
+    width: min(100%, 1020px);
+    margin: 0 auto;
+    padding: 112px 20px 40px;
+}
+
+section.projeto {
+    border-radius: 24px;
+}
+
+figcaption.descricao-projeto {
+    padding: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 720px) {
+    section#sobre-mim {
+        grid-template-columns: 1fr;
+    }
+
+    img#img-sobre-mim {
+        margin: 0 auto;
+    }
+
+    #txt-sobre-mim p,
+    #txt-sobre-mim ul {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        position: sticky;
+        padding: 8px 0;
+    }
+
+    section#home {
+        padding-top: 28px;
+    }
+
+    div#page {
+        padding: 40px 18px;
+    }
+
+    .container {
+        padding-top: 34px;
+    }
+}
