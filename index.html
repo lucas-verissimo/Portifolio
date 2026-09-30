@@ -1,74 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/buttons.css">
-    <link rel="stylesheet" href="styles/responsivo.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Portfólio de Lucas Veríssimo, desenvolvedor de software com foco em React, Next.js, TypeScript e manutenção de interfaces.">
-    <title>Lucas Veríssimo | Desenvolvedor de Software</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101211">
+  <meta name="description" content="Lucas Veríssimo é desenvolvedor de software com mais de cinco anos de experiência. Interfaces, manutenção e integrações em React, Next.js e TypeScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Veríssimo — Desenvolvedor de software">
+  <meta property="og:description" content="Interfaces bem pensadas, código bem resolvido. Conheça projetos e formas de trabalhar com Lucas Veríssimo.">
+  <meta property="og:image" content="https://lucas-verissimo.github.io/Portifolio/img/projetos/engenharia-clara-desktop.png">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <script src="scripts/portfolio.js" defer></script>
+  <title>Lucas Veríssimo — Desenvolvedor de software</title>
 </head>
 <body>
-    <header>
-        <div class="caixa">
-            <picture>
-                <source media="(max-width: 420px)" srcset="img/logo-pq-85px.png">
-                <img src="img/logo-pq-50px.png" alt="logo" id="logo-header">
-            </picture>
-
-            <nav>
-                <a href="#">
-                    <span>HOME</span>
-                </a>
-                <a href="projetos.html">
-                    <span>PROJETOS</span>
-                </a>
-            </nav>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Lucas Veríssimo, voltar ao início"><span class="brand-mark" aria-hidden="true">LV<span>.</span></span><span class="brand-name">Lucas Veríssimo<span> / dev</span></span></a>
+      <nav class="main-nav" aria-label="Navegação principal"><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a></nav>
+      <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> DESENVOLVEDOR DE SOFTWARE · BRASIL</div>
+          <h1 id="hero-title">Boas ideias merecem <em>boas interfaces.</em></h1>
+          <p class="hero-lead">Desenvolvo e aprimoro experiências web com atenção ao detalhe, clareza no código e foco no que precisa funcionar de verdade.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#contato">Trabalhe comigo <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-stack" aria-label="Tecnologias principais"><span>REACT</span><i></i><span>NEXT.JS</span><i></i><span>TYPESCRIPT</span><i></i><span>NODE.JS</span></div>
         </div>
-    </header>
-
-    <main>
-        <section id="home">
-            <img src="img/logo.png" alt="logo" class="vertical-align" id="logo">
-        </section>
-        <div id="page">
-            <div id="text-page">
-                <h2 class="berkshire">Desenvolvedor de software</h2>
-                <section id="sobre-mim">
-                    <img src="img/terno.png" alt="Lucas Veríssimo" id="img-sobre-mim">
-                    <section id="txt-sobre-mim">
-                        <p>
-                            Sou desenvolvedor de software com mais de cinco anos de experiência profissional. Trabalho com React, Next.js, TypeScript e JavaScript na construção e manutenção de interfaces, componentes, integrações e sistemas web. Durante três anos, contribuí em equipe para projetos do Banco Honda, Seguros Honda, Consórcio Honda e Hub Honda.
-                        </p>
-                        <p><br>
-                            Serviços para projetos pontuais:
-                        </p>
-                        <ul>
-                            <li>Correção de bugs e problemas de responsividade</li>
-                            <li>Implementação de telas e componentes</li>
-                            <li>Pequenas integrações com APIs</li>
-                            <li>Manutenção de aplicações React e Next.js</li>
-                        </ul>
-                    </section>
-                </section>
-                <section id="contato">
-                    <p>Disponibilidade de até 20 horas por semana para uma entrega ativa por vez.</p>
-                    <h2 class="berkshire">Perfis profissionais</h2>
-                    <a class="contact-link" href="https://www.workana.com/freelancer/f4bf16cee5c7a39f96fecd50b333c1d8" target="_blank" rel="noreferrer">Workana</a>
-                    <a class="contact-link" href="https://www.upwork.com/freelancers/~01336eeddcee2333fa" target="_blank" rel="noreferrer">Upwork</a>
-                </section>
-            </div>
+        <div class="hero-art" aria-label="Prévia do projeto Engenharia Clara">
+          <div class="art-grid" aria-hidden="true"></div>
+          <div class="art-topline"><span>SELEÇÃO / 2026</span><span>01 — 04</span></div>
+          <div class="art-window"><div class="window-bar"><span class="window-dots" aria-hidden="true"><b></b><b></b><b></b></span><span>engenharia-clara.vercel.app</span><span>↗</span></div><img src="img/projetos/engenharia-clara-desktop.png" alt="Prévia da landing page Engenharia Clara" fetchpriority="high"></div>
+          <div class="art-bottom"><span class="art-caption">DESIGN. CÓDIGO. DETALHE.</span><span class="art-sparkle" aria-hidden="true">✳</span></div>
         </div>
-    </main>
-    <footer>
-        <section id="rodape">
-            &copy;2026 Lucas Veríssimo
-        </section>
-    </footer>
-    <script src="scripts/script.js"></script>
+      </div>
+      <div class="shell hero-foot"><span>ROLAR PARA EXPLORAR <span aria-hidden="true">↓</span></span><span>PORTFÓLIO / LUCAS VERÍSSIMO</span></div>
+    </section>
+    <section class="intro-strip" aria-label="Resumo profissional"><div class="shell intro-grid"><div><strong>5<span>+</span></strong><span>anos de experiência<br>em desenvolvimento</span></div><div><strong>03</strong><span>anos contribuindo em<br>projetos Honda, em equipe</span></div><div><strong>20<span>h</span></strong><span>por semana para<br>projetos pontuais</span></div></div></section>
+    <section class="section projects-section" id="projetos" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-heading"><div><p class="section-kicker"><span>01 /</span> PORTFÓLIO</p><h2 id="projects-title">Projetos <em>selecionados.</em></h2></div><p>Da landing page ao produto web: experiências com identidades diferentes, unidas pelo cuidado com execução e interface.</p></div>
+        <div class="project-grid">
+          <a class="project-card project-card-featured" href="https://engenharia-clara.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Engenharia Clara em nova aba">
+            <div class="project-image project-image-engineering"><img src="img/projetos/engenharia-clara-desktop.png" alt="Tela inicial da Engenharia Clara" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-details"><div class="project-meta"><span>01 / WEB DESIGN &amp; FRONTEND</span><span>DEMO AUTORAL</span></div><div class="project-bottom"><div><h3 class="project-title">Engenharia Clara <span aria-hidden="true">↗</span></h3><span class="project-description">Landing page para uma consultoria fictícia de engenharia, com visual próprio, responsividade e experiência de contato simulada.</span></div><span class="project-tags">Next.js · React · TypeScript</span></div></div>
+          </a>
+          <a class="project-card" href="https://videodrop.online/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto VideoDrop em nova aba">
+            <div class="project-image project-image-video"><img src="img/projetos/videodrop.png" alt="Tela inicial do VideoDrop" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-details"><div class="project-meta"><span>02 / FERRAMENTA WEB</span><span>PROJETO PUBLICADO</span></div><div class="project-bottom"><div><h3 class="project-title">VideoDrop <span aria-hidden="true">↗</span></h3><span class="project-description">Uma experiência direta para validar links e baixar vídeos públicos do Instagram pelo navegador.</span></div><span class="project-tags">Ferramenta web</span></div></div>
+          </a>
+          <a class="project-card" href="https://candeia-beta.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Candeia em nova aba">
+            <div class="project-image project-image-candeia"><img src="img/projetos/candeia.png" alt="Tela inicial do Candeia" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-details"><div class="project-meta"><span>03 / PRODUTO WEB</span><span>VERSÃO BETA</span></div><div class="project-bottom"><div><h3 class="project-title">Candeia <span aria-hidden="true">↗</span></h3><span class="project-description">Base visual e de acesso para uma jornada de planejamento financeiro pessoal e familiar.</span></div><span class="project-tags">Produto digital</span></div></div>
+          </a>
+          <a class="project-card" href="https://lp-prime-house.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Prime House em nova aba">
+            <div class="project-image project-image-prime"><img src="img/projetos/prime-house.png" alt="Tela inicial da Prime House" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-details"><div class="project-meta"><span>04 / LANDING PAGE</span><span>PROJETO PUBLICADO</span></div><div class="project-bottom"><div><h3 class="project-title">Prime House <span aria-hidden="true">↗</span></h3><span class="project-description">Presença digital para restaurante e pub, com narrativa visual e caminhos claros para reserva.</span></div><span class="project-tags">Landing page</span></div></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section about-section" id="sobre" aria-labelledby="about-title"><div class="shell about-grid"><div class="about-heading"><p class="section-kicker"><span>02 /</span> QUEM SOU</p><h2 id="about-title">Prazer,<br><em>Lucas.</em></h2><div class="about-shape" aria-hidden="true"><span>LV</span><span>✳</span></div></div><div class="about-body"><p class="about-lead">Sou desenvolvedor de software e gosto de transformar problemas complexos em experiências claras, rápidas e agradáveis de usar.</p><p>Tenho mais de cinco anos de experiência profissional com interfaces, componentes, integrações e sistemas web. Ao longo de três anos, contribuí em equipe para projetos do Banco Honda, Seguros Honda, Consórcio Honda e Hub Honda, em vínculos CLT.</p><p>Hoje abro espaço para entregas pontuais em React, Next.js e TypeScript: uma correção importante, uma tela que precisa sair do papel ou uma interface que merece mais cuidado.</p><a class="text-link" href="#contato">Vamos criar algo juntos <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section services-section" id="atuacao" aria-labelledby="services-title"><div class="shell"><div class="section-heading section-heading-light"><div><p class="section-kicker"><span>03 /</span> COMO POSSO AJUDAR</p><h2 id="services-title">Pequenas entregas.<br><em>Grande atenção.</em></h2></div><p>Escopo claro, comunicação direta e uma solução pensada para durar depois da entrega.</p></div><div class="service-list"><div class="service-row"><span class="service-index">01</span><h3>Correções &amp; manutenção</h3><p>Bugs, comportamento inesperado e melhorias em aplicações existentes.</p><span class="service-icon" aria-hidden="true">↗</span></div><div class="service-row"><span class="service-index">02</span><h3>Interfaces responsivas</h3><p>Telas e componentes que funcionam bem do celular ao desktop.</p><span class="service-icon" aria-hidden="true">↗</span></div><div class="service-row"><span class="service-index">03</span><h3>Integrações pontuais</h3><p>Conexão com APIs e fluxos bem definidos, com validação do caminho principal.</p><span class="service-icon" aria-hidden="true">↗</span></div></div><div class="services-footer"><span>FERRAMENTAS QUE USO</span><div><span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>Node.js</span><span>Git</span></div></div></div></section>
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="shell contact-grid"><div><p class="section-kicker"><span>04 /</span> PRÓXIMO PASSO</p><h2 id="contact-title">Seu projeto<br>merece <em>avançar.</em></h2><p>Se você tem um problema concreto ou uma ideia bem definida, podemos começar por uma entrega pequena e objetiva.</p></div><div class="contact-panel"><span class="contact-panel-top"><span class="pulse-dot" aria-hidden="true"></span> DISPONÍVEL PARA PROJETOS PONTUAIS</span><p>Escolha uma plataforma para apresentar o contexto. Eu avalio o escopo e proponho um próximo passo claro.</p><a href="https://www.99freelas.com.br/user/lucas-verissimo-1789312422268" target="_blank" rel="noopener noreferrer">99Freelas <span aria-hidden="true">↗</span></a><a href="https://www.workana.com/freelancer/f4bf16cee5c7a39f96fecd50b333c1d8" target="_blank" rel="noopener noreferrer">Workana <span aria-hidden="true">↗</span></a><a href="https://www.upwork.com/freelancers/~01336eeddcee2333fa" target="_blank" rel="noopener noreferrer">Upwork <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="brand" href="#inicio" aria-label="Lucas Veríssimo, voltar ao início"><span class="brand-mark" aria-hidden="true">LV<span>.</span></span><span class="brand-name">Lucas Veríssimo</span></a><span>DESIGN COM INTENÇÃO. CÓDIGO COM CUIDADO.</span><span>© <span id="year">2026</span> LUCAS VERÍSSIMO</span></div></footer>
 </body>
 </html>
